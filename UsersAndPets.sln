@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersAndPetsAPI", "UsersAndPets\UsersAndPetsAPI.csproj", "{89133EB3-ADD4-4EAF-9D07-D5101D0B141D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetsClient", "PetsClient\PetsClient.csproj", "{CF48292D-4838-423D-B6C3-3E64824D15BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89133EB3-ADD4-4EAF-9D07-D5101D0B141D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89133EB3-ADD4-4EAF-9D07-D5101D0B141D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89133EB3-ADD4-4EAF-9D07-D5101D0B141D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89133EB3-ADD4-4EAF-9D07-D5101D0B141D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF48292D-4838-423D-B6C3-3E64824D15BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF48292D-4838-423D-B6C3-3E64824D15BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF48292D-4838-423D-B6C3-3E64824D15BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF48292D-4838-423D-B6C3-3E64824D15BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+namespace UsersAndPets.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}

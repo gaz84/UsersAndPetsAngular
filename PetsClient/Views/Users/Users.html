@@ -1,0 +1,40 @@
+﻿<h1>All Users</h1>
+<div>
+
+    <form name="userForm" novalidate class="form-inline" ng-submit="create(newUser)">
+        <div class="form-group">
+            <input  id="userName" name="userName" type="text" class="form-control" ng-model="newUser.UserName" placeholder="Enter Pet Owner's Name" required>
+        </div>
+        <button type="submit" class="btn btn-success" ng-disabled="userForm.$invalid">Add</button>
+        <div class="error" ng-show="userForm.userName.$invalid && userForm.userName.$dirty">
+            This field is required!
+        </div>
+    </form>
+
+    <hr />
+    <div>Total count: {{users.length}}</div>
+    <div class="table-responsive">
+        <table class="table table-bordered  table-striped">
+            <thead>
+                <tr class="active">
+                    <th>Name</th>
+                    <th>Pets Count</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tr ng-repeat="User in users | orderBy:'Id'| paddingRange:selectedPage:pageSize">
+                <td><a href="#" ng-click="showCurrentUser(User)">{{User.UserName}}</a></td>
+                <td class="text-left">{{User.Pets.length}}</td>
+                <td class="text-right">
+                    <button class="btn btn-sm btn-danger" ng-click="delete(User)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+        <div class="btn-group">
+            <a ng-repeat="page in users | pageCount:pageSize" ng-click="selectPage($index + 1)" class="btn btn-default"> {{$index + 1}} </a>
+        </div>
+    </div>
+</div>
